@@ -38,6 +38,8 @@ def render():
 
     glutSwapBuffers()
 
+    print("Renderización completada.")
+
 def main():
     glutInit()
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE)
@@ -45,8 +47,10 @@ def main():
     glutCreateWindow("Mesh OpenGL")
 
     glutDisplayFunc(render)
+    
+    print("Iniciando renderización...")
     glutMainLoop()
-
+    
 if __name__ == '__main__':
     main()
 
