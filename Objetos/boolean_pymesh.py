@@ -1,6 +1,8 @@
 # coding=utf-8
 
 import pymesh
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 # Cargar las mallas desde archivos
 mesh1 = pymesh.load_mesh("mesh1.obj")
@@ -19,6 +21,30 @@ difference_mesh = pymesh.boolean(mesh1, mesh2, operation="difference")
 pymesh.save_mesh("union.obj", union_mesh)
 pymesh.save_mesh("intersection.obj", intersection_mesh)
 pymesh.save_mesh("difference.obj", difference_mesh)
+
+# Mostrar gráficamente las mallas resultantes
+fig = plt.figure()
+ax = fig.add_subplot(111, projection="3d")
+
+# Función auxiliar para visualizar una malla
+def plot_mesh(mesh, color):
+    vertices = mesh.vertices
+    faces = mesh.faces
+    ax.plot_trisurf(vertices[:, 0], vertices[:, 1], vertices[:, 2], triangles=faces, color=color)
+
+# Visualizar las mallas resultantes
+plot_mesh(mesh1, "blue")
+plot_mesh(mesh2, "red")
+plot_mesh(union_mesh, "green")
+plot_mesh(intersection_mesh, "orange")
+plot_mesh(difference_mesh, "purple")
+
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+
+plt.show()
+
 
 
 # PyMesh: Es una biblioteca de Python que proporciona una amplia 
