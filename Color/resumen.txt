@@ -1,0 +1,48 @@
+
+En el contexto de la computación gráfica, el color juega un papel fundamental para representar y 
+visualizar objetos y escenas. Aquí tienes un resumen de los conceptos principales 
+relacionados con el color en este campo:
+
+Modelo de color: Un modelo de color es un sistema utilizado para representar y describir colores. 
+Algunos de los modelos más comunes son RGB (rojo, verde, azul), CMYK (cian, magenta, amarillo, negro), 
+HSV (matiz, saturación, valor) y HSL (matiz, saturación, luminosidad).
+
+Espacio de color: Un espacio de color es una representación tridimensional de todos los colores 
+posibles dentro de un modelo de color específico. Por ejemplo, el espacio de color RGB se define 
+mediante los ejes rojo, verde y azul.
+
+Componentes de color: En el modelo RGB, los colores se componen de tres componentes principales: 
+rojo (R), verde (G) y azul (B). Cada componente tiene un valor numérico que indica la intensidad del color,
+ generalmente en un rango de 0 a 255.
+
+Canales de color: Los canales de color son los diferentes componentes utilizados para representar 
+un color en un modelo de color específico. Por ejemplo, en el modelo RGB, hay tres canales: el canal rojo, 
+el canal verde y el canal azul.
+
+Profundidad de bits: La profundidad de bits se refiere a la cantidad de información utilizada 
+para representar cada canal de color. Por ejemplo, una profundidad de bits de 8 significa que 
+cada canal tiene 8 bits de información, lo que permite representar 256 niveles de intensidad (desde 0 hasta 255).
+
+Alfa (canal alfa): El canal alfa es un componente adicional que se utiliza para representar 
+la transparencia de un color. El valor del canal alfa varía entre 0 (totalmente transparente) y 1 (totalmente opaco).
+
+Mezcla de colores: La mezcla de colores es el proceso de combinar diferentes colores para obtener 
+un nuevo color. En el modelo RGB, la mezcla se realiza sumando los componentes de color de los colores que se desean mezclar.
+
+Gradientes: Un gradiente es una transición gradual entre diferentes colores. Puede haber gradientes l
+ineales que cambian en una dirección específica, o gradientes radiales que cambian 
+desde un punto central hacia el exterior.
+
+Espacios de color y perfiles de color: Los espacios de color pueden variar según la aplicación y 
+los dispositivos de visualización. Los perfiles de color se utilizan para gestionar y mantener la 
+consistencia del color entre diferentes dispositivos, como monitores, impresoras y cámaras.
+
+Estos son solo algunos conceptos básicos relacionados con el color en la computación gráfica. 
+La comprensión y el manejo adecuado del color son fundamentales para lograr resultados visuales 
+precisos y realistas en aplicaciones gráficas.
+
+
+
+
+
+
