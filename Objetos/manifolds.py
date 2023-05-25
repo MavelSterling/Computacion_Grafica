@@ -39,6 +39,8 @@ def render():
     glEnd()
 
     glutSwapBuffers()
+    print("Renderización completada.")
+
 
 def main():
     glutInit()
@@ -47,6 +49,8 @@ def main():
     glutCreateWindow("Manifold OpenGL")
 
     glutDisplayFunc(render)
+    print("Iniciando renderización...")
+
     glutMainLoop()
 
 if __name__ == '__main__':
